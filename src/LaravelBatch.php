@@ -3,8 +3,7 @@
 namespace Mavinoo\LaravelBatch;
 
 use Illuminate\Database\DatabaseManager;
-use Illuminate\Database\Eloquent\Model;
-use Mavinoo\LaravelBatch\Common\Helpers;
+use Illuminate\Database\Eloquent\Model
 
 class Batch
 {
@@ -60,8 +59,7 @@ class Batch
             $ids[] = $val[$index];
             foreach (array_keys($val) as $field) {
                 if ($field !== $index) {
-                    $value = (is_null($val[$field]) ? 'NULL' : '"' . Helpers::mysql_escape($val[$field]) . '"');
-                    $final[$field][] = 'WHEN `' . $index . '` = "' . $val[$index] . '" THEN ' . $value . ' ';
+                    $final[$field][] = 'WHEN `' . $index . '` = "' . $val[$index] . '" THEN ' . $val[$field] . ' ';
                 }
             }
         }
