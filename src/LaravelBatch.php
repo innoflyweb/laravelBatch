@@ -3,7 +3,7 @@
 namespace Mavinoo\LaravelBatch;
 
 use Illuminate\Database\DatabaseManager;
-use Illuminate\Database\Eloquent\Model
+use Illuminate\Database\Eloquent\Model;
 
 class Batch
 {
