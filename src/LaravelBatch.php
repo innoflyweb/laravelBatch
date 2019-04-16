@@ -4,6 +4,7 @@ namespace Mavinoo\LaravelBatch;
 
 use Illuminate\Database\DatabaseManager;
 use Illuminate\Database\Eloquent\Model;
+use Mavinoo\LaravelBatch\Common\Helpers;
 
 class Batch
 {
